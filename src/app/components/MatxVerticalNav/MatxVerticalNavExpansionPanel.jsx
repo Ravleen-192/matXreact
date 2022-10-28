@@ -34,11 +34,11 @@ const BaseButton = styled(ButtonBase)(({ theme }) => ({
   width: '100%',
   whiteSpace: 'pre',
   overflow: 'hidden',
-  paddingRight: '16px',
-  borderRadius: '4px',
+  
+  borderRadius: '12px',
   marginBottom: '8px',
   display: 'flex',
-  justifyContent: 'space-between !important',
+  justifyContent: 'left !important',
   color: theme.palette.text.primary,
   '&:hover': { background: 'rgba(255, 255, 255, 0.08)' },
   '& .icon': {
@@ -115,6 +115,7 @@ const MatxVerticalNavExpansionPanel = ({ item, children, mode }) => {
   return (
     <NavExpandRoot>
       <BaseButton
+      
         className={clsx({
           'has-submenu compactNavItem': true,
           compactNavItem: mode === 'compact',
@@ -122,15 +123,7 @@ const MatxVerticalNavExpansionPanel = ({ item, children, mode }) => {
         })}
         onClick={handleClick}
       >
-        <Box display="flex" alignItems="center">
-          {icon && <Icon className="icon">{icon}</Icon>}
-          {iconText && <BulletIcon />}
-          <ItemText className="sidenavHoverShow">{name}</ItemText>
-        </Box>
-
-        {badge && <BadgeValue className="sidenavHoverShow itemIcon">{badge.value}</BadgeValue>}
-
-        <div
+         <div
           className={clsx({
             sidenavHoverShow: true,
             collapseIcon: collapsed,
@@ -141,6 +134,14 @@ const MatxVerticalNavExpansionPanel = ({ item, children, mode }) => {
             chevron_right
           </Icon>
         </div>
+        <Box display="flex" alignItems="left">
+         
+          <ItemText className="sidenavHoverShow">{name}</ItemText>
+        </Box>
+
+        {badge && <BadgeValue className="sidenavHoverShow itemIcon">{badge.value}</BadgeValue>}
+
+       
       </BaseButton>
 
       <div
