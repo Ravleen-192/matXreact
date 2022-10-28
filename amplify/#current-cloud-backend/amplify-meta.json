@@ -1,0 +1,15 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-matxreact-dev-153320-authRole",
+      "UnauthRoleArn": "arn:aws:iam::211544418920:role/amplify-matxreact-dev-153320-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::211544418920:role/amplify-matxreact-dev-153320-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-matxreact-dev-153320-deployment",
+      "UnauthRoleName": "amplify-matxreact-dev-153320-unauthRole",
+      "StackName": "amplify-matxreact-dev-153320",
+      "StackId": "arn:aws:cloudformation:us-east-1:211544418920:stack/amplify-matxreact-dev-153320/e42c0250-56a7-11ed-b6de-0ab858f14c8d",
+      "AmplifyAppId": "d2pedho0tdo8y7"
+    }
+  }
+}
