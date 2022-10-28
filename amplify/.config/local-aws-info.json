@@ -3,5 +3,10 @@
     "configLevel": "project",
     "useProfile": true,
     "profileName": "ravleen"
+  },
+  "devnew": {
+    "configLevel": "project",
+    "useProfile": true,
+    "profileName": "default"
   }
 }
