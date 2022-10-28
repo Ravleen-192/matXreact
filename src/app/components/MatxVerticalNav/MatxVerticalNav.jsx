@@ -9,10 +9,11 @@ const ListLabel = styled(Paragraph)(({ theme, mode }) => ({
   fontSize: '12px',
   marginTop: '20px',
   marginLeft: '15px',
-  marginBottom: '10px',
+  marginBottom: '2px',
   textTransform: 'uppercase',
   display: mode === 'compact' && 'none',
   color: theme.palette.text.secondary,
+  
 }));
 
 const ExtAndIntCommon = {
@@ -21,10 +22,11 @@ const ExtAndIntCommon = {
   borderRadius: '4px',
   height: 44,
   whiteSpace: 'pre',
-  marginBottom: '8px',
+  marginBottom: '2px',
   textDecoration: 'none',
   justifyContent: 'space-between',
   transition: 'all 150ms ease-in',
+  backgroundColor: 'rgba(255, 255, 255, 0.16)',
   '&:hover': { background: 'rgba(255, 255, 255, 0.08)' },
   '&.compactNavItem': {
     overflow: 'hidden',
@@ -40,12 +42,14 @@ const ExtAndIntCommon = {
 const ExternalLink = styled('a')(({ theme }) => ({
   ...ExtAndIntCommon,
   color: theme.palette.text.primary,
+ 
 }));
 
 const InternalLink = styled(Box)(({ theme }) => ({
   '& a': {
     ...ExtAndIntCommon,
     color: theme.palette.text.primary,
+    backgroundColor: 'rgba(255, 255, 255, 0.16)',
   },
   '& .navItemActive': {
     backgroundColor: 'rgba(255, 255, 255, 0.16)',
@@ -56,6 +60,7 @@ const StyledText = styled(Span)(({ mode }) => ({
   fontSize: '0.875rem',
   paddingLeft: '0.8rem',
   display: mode === 'compact' && 'none',
+  
 }));
 
 const BulletIcon = styled('div')(({ theme }) => ({

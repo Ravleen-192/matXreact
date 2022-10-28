@@ -34,12 +34,12 @@ const BaseButton = styled(ButtonBase)(({ theme }) => ({
   width: '100%',
   whiteSpace: 'pre',
   overflow: 'hidden',
-  
-  borderRadius: '12px',
-  marginBottom: '8px',
+  borderRadius: '4px',
+  marginBottom: '2px',
   display: 'flex',
   justifyContent: 'left !important',
   color: theme.palette.text.primary,
+  backgroundColor: 'rgba(255, 255, 255, 0.16)',
   '&:hover': { background: 'rgba(255, 255, 255, 0.08)' },
   '& .icon': {
     width: 36,
