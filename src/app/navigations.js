@@ -18,7 +18,7 @@ export const navigations = [
     icon: 'launch',
     /*badge: { value: '30+', color: 'secondary' },*/
     children: [
-      { name: 'Batch', path: '/material/autocomplete', iconText: 'A' },
+      { name: 'Pipeline', path: '/material/autocomplete', iconText: 'A' },
       { name: 'Process', path: '/material/buttons', iconText: 'B' },
       { name: 'Process Step', path: '/material/checkbox', iconText: 'C' },
      
